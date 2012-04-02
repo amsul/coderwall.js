@@ -2,7 +2,7 @@
   Author:                 Amsul
   Author URI:             http://amsul.ca
   Description:            Displays Coderwall badges for your Coderwall team
-  Version:                0 alpha 0.2
+  Version:                0.0.2 alpha
   Created on:             31/03/2012
   Last Updated:           01 April, 2012
 */
@@ -90,7 +90,7 @@
         var showcount;
         showcount = badgeObj.count > 1 ? ' show-count' : '';
         return '<li class="box-badge">\
-        <div class="badge-icon' + showcount + '" data-count="' + badgeObj.count + '"><img width="54" height="54" alt="' + badge + '" data-title="' + badgeObj.description + '" src="' + badgeObj.badge + '"></div>\
+        <div class="badge-icon' + showcount + '" data-count="' + badgeObj.count + '"><img width="72" height="72" alt="' + badge + '" data-title="' + badgeObj.description + '" src="' + badgeObj.badge + '"></div>\
         <div class="badge-name">' + badge + '</div>\
       </li>';
       };
@@ -102,7 +102,7 @@
       compileCoderList = function(coder) {
         return '<a href="http://coderwall.com/' + coder + '" target="_blank">' + coder + '</a>';
       };
-      teamBadgesList += '<div class="team-coders"><strong>Achieved by:&nbsp;</strong>';
+      teamBadgesList += '<div class="team-coders"><strong>Badges achieved by:&nbsp;</strong>';
       _ref = CodersWall.team;
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
         coder = _ref[_i];

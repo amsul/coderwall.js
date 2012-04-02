@@ -14,7 +14,7 @@
   <title>Coderwall Team Badges</title>
 	
 	<link type="text/css" 			rel="stylesheet"			href="main.css">
-	<link 											rel="dns-prefetch"		href="//ajax.googleapis.com">
+	<link 											rel="dns-prefetch"		href="http://ajax.googleapis.com">
 
 	<!--[if lt IE 9]>
 		<script src="//ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
@@ -24,28 +24,91 @@
 	
 	
   <div id="T">
+
+
+  	<a href="https://github.com/amsul/coderwall.js"><img style="z-index: 1000; position: fixed; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" /></a>
   
   	
   	<header class="container" id="header">
 	  	<div class="row">
 	  		<h1>Coderwall Team Badges</h1>
+	  		<div class="subtitle">a jQuery plugin that displays all <a href="http://coderwall.com" target="_blank">Coderwall</a> badges for your team</div>
 	  		<div class="clear"></div>
 	  	</div>
 		</header>
 
 
-		<section class="row">
-			<div class="colbox">
-				<div id="team_coderwall"></div>
+		<section class="container">
+			<div class="row">
+				<div class="colbox">
+					<div id="team_coderwall"></div>
+				</div>
 			</div>
 		</section>
+
+
+		<hr>
+
+
+		<section class="container">
+			<div class="row">
+
+
+				<div class="sevencol">
+					<div class="colbox">
+
+						<h2>Usage</h2>
+						<pre><code>$('#CONTAINER').teamCoderwall({
+    team: ['CODERWALL','USERNAMES','SEPARATED','BY','COMMAS']
+});</code></pre>
+						<p>Just change <code>#CONTAINER</code> to the ID of the DOM element where you want the badges to be displayed.</p>
+						<p>Next, you need to pass in a list of your team members' Coderwall.com usernames as as array.</p>
+
+				    <h2>Todo</h2>
+				    <p>Add more options. Such as <code>badge_size</code> and the likes.</p>
+
+					</div>
+				</div>
+
+
+				<div class="fivecol">
+					<div class="colbox">
+
+						<h2>Download</h2>
+						<p>Current version: <strong>0.0.2 alpha</strong></p>
+						<p><a href="https://raw.github.com/amsul/coderwall.js/gh-pages/coderwall.js">Full (4KB)</a><span class="dimmed">&nbsp;&nbsp;/&nbsp;&nbsp;</span><a href="https://raw.github.com/amsul/coderwall.js/gh-pages/coderwall.min.js">Minified (2KB)</a></p>
+						<p><a href="https://raw.github.com/amsul/coderwall.js/gh-pages/coderwall.coffee">CoffeeScript Source</a></strong></p>
+				    <p>You can download the <strong>coderwall.js</strong> project as a <a href="https://github.com/amsul/coderwall.js/zipball/master">zip</a> or <a href="https://github.com/amsul/coderwall.js/tarball/master">tar</a>. Or, clone the project with <a target="_blank" href="http://git-scm.com">Git</a> by running:</p>
+				    <pre><code>$ git clone git://github.com/amsul/coderwall.js</code></pre>
+
+					</div>
+				</div>
+
+
+				<div class="clear"></div>
+			</div>
+		</section>
+
+
+		<footer class="container" id="footer">
+			<div class="row">
+
+				<div class="colbox">
+					<p>brought to you by <a target="_blank" href="http://amsul.ca">amsul</a></p>
+				</div>
+				<br>
+				<a class="slash" href="http://wecodestuff.co" target="_blank" title="weCodeStuff : ninjas who code"></a>
+
+				<div class="clear"></div>
+			</div>
+		</footer>
 
   	
   </div> <!-- #T -->
 	
 	
 	
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script src="coderwall.min.js"></script>
 
 	<script type="text/javascript">
@@ -55,5 +118,12 @@
 		});
 
 	</script>
+
+	<script type="text/javascript">var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script>
+	<script type="text/javascript">try { var pageTracker = _gat._getTracker("UA-30529502-1"); pageTracker._trackPageview();} catch(err) {}script>
 	
 </html>
+
+
+
+
