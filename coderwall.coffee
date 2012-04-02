@@ -179,4 +179,3 @@ $.fn.teamCoderwall.options =
 
 
 
-

@@ -1,9 +1,9 @@
-# Coderwall-team.js
+# Coderwall.js
 
 
 jQuery plugin that displays [Coderwall](http://coderwall.com) badges for your team.
 
-Demo: [Coderwall-team.js](http://amsul.github.com/coderwall-team.js/)
+Demo: __[Coderwall.js](http://amsul.github.com/coderwall-team.js/)__
 
 ===
 
@@ -19,8 +19,8 @@ $('#CONTAINER').teamCoderwall({
 
 ## Download 
 
-Full: [Coderwall-team.js](https://raw.github.com/amsul/coderwall-team.js/gh-pages/coderwall-team.js)
+Full: __[coderwall.js](https://raw.github.com/amsul/coderwall.js/gh-pages/coderwall.js)__
 
-Min: [Coderwall-team.min.js](https://raw.github.com/amsul/coderwall-team.js/gh-pages/coderwall-team.min.js)
+Min: __[coderwall.min.js](https://raw.github.com/amsul/coderwall.js/gh-pages/coderwall.min.js)__
 
-CoffeeScript source: [Coderwall-team.coffee](https://raw.github.com/amsul/coderwall-team.js/gh-pages/coderwall-team.coffee)
+CoffeeScript source: __[coderwall.coffee](https://raw.github.com/amsul/coderwall.js/gh-pages/coderwall.coffee)__
