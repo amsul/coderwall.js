@@ -3,7 +3,7 @@
 
 jQuery plugin that displays [Coderwall](http://coderwall.com) badges for your team.
 
-Demo: __[Coderwall.js](http://amsul.github.com/coderwall-team.js/)__
+Demo: __[Coderwall.js](http://amsul.github.com/coderwall.js)__
 
 ===
 

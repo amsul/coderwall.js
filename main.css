@@ -2,7 +2,7 @@
  * Author:															Amsul
  * Author URI:													http://amsul.ca
  * Description:													Main stylesheet
- * Version:															0 alpha 0.2
+ * Version:															0.0.2 alpha
  * Created on:													29/03/2012
  * Last Updated:												02 April, 2012
  * 
@@ -111,9 +111,9 @@ hr {
 	display: block;
 	height: 1px;
 	border: 0;
-	border-top: 1px solid #ccc;
-	margin: 1em 0;
-	padding: 0;
+	margin: 2.8em 0;
+	padding: 0 0 4px;
+	background: url(media/shadow.png) no-repeat 50% 0 transparent;
 }
 
 ins { background: #ff9; color: #000; text-decoration: none; }
@@ -344,6 +344,15 @@ h6 {
 	word-wrap: break-word;
 }
 
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+	margin-top: 0;
+}
+
 h1 {
 	font-size: 32px;
 }
@@ -369,6 +378,39 @@ h6 {
 	margin: 1.5em 0 .5em;
 }
 
+
+pre,
+code {
+	background: #fff;
+	border: 1px solid #ccc;
+	font-size: 12px;
+	color: #555;
+
+	-webkit-border-radius: 3px;
+		 -moz-border-radius: 3px;
+					border-radius: 3px;
+}
+
+pre {
+	overflow-x: auto;
+	padding: 6px 14px;
+
+	-webkit-box-shadow: rgba(0,0,0,.06) 0 1px 4px;
+		 -moz-box-shadow: rgba(0,0,0,.06) 0 1px 4px;
+					box-shadow: rgba(0,0,0,.06) 0 1px 4px;
+}
+
+code {
+	padding: 4px 7px;
+	background: #f8f8f8;
+}
+
+pre > code {
+	display: table;
+	background: none;
+	border: 0;
+	padding-right: 24px;
+}
 
 
 
@@ -515,45 +557,56 @@ input[type=submit].button-white:active,
 ************************************************************************/
 
 #header {
-	padding: 4px 0 6px;
-	background: #333;
-	color: #fff;
-	text-shadow: 0 1px #000;
-	margin-bottom: 16px;
-	font-weight: bold;
 	text-align: center;
-
-	-webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-		 -moz-box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-					box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+	margin-bottom: 32px;
 }
 
 #header h1 {
-	margin: 0;
-	font-size: 20px;
+	margin: 0.5em 0 0;
+}
+
+#header .subtitle {
+	color: #888;
+	font-size: 12px;
+}
+#header .subtitle a {
+	color: #888;
+	font-weight: bold;
 }
 
 #footer {
-	margin-top: 12px;
-	color: #fff;
-	background: #333;
-}
-
-#footer h4 {
-	margin: 0;
 	text-align: center;
-	font-size: 13px;
+	color: #666;
+	font-size: 11px;
+	background: #333;
+	margin-top: 88px;
+	min-height: 128px;
+	padding: 12px 0 42px;
+}
+#footer a {
+	color: #666;
+	font-weight: bold;
+}
+#footer .slash {
+	background: url(media/slash.png) no-repeat 0 0 transparent;
+	width: 72px;
+	height: 72px;
+	overflow: hidden;
+	display: inline-block;
+}
+#footer .slash:hover {
+	background-position: 0 -72px;
 }
 
 
-#team_badges,
+
+/** Team coderwall stuff **/
+
 #team_coderwall {
 	display: none;
 }
 
-
 #team_box {
-	margin: 3em 0 1em;
 	padding: 36px 10px 0;
 	background: #fff;
 	border: 1px solid #d2d2d2;
@@ -573,7 +626,7 @@ input[type=submit].button-white:active,
 
 #team_box .box-badge {
 	display: inline-block;
-	width: 88px;
+	width: 120px;
 	margin: 0 28px 42px;
 	position: relative;
 }
@@ -583,7 +636,7 @@ input[type=submit].button-white:active,
 	position: absolute;
 	top: 0;
 	right: 0;
-	margin: -8px 5px 0 0;
+	margin: -8px 10px 0 0;
 	background: #5a2;
 	border: 1px solid #280;
 	border-bottom-color: #160;
@@ -598,9 +651,9 @@ input[type=submit].button-white:active,
 		 -moz-border-radius: 8px;
 					border-radius: 8px;
 
-	-webkit-box-shadow: rgba(0,0,0,0.24) 0 1px 3px, inset rgba(160,255,160,0.2) 0 1px;
-		 -moz-box-shadow: rgba(0,0,0,0.24) 0 1px 3px, inset rgba(160,255,160,0.2) 0 1px;
-					box-shadow: rgba(0,0,0,0.24) 0 1px 3px, inset rgba(160,255,160,0.2) 0 1px;
+	-webkit-box-shadow: rgba(0,0,0,.24) 0 1px 3px, inset rgba(160,255,160,.2) 0 1px;
+		 -moz-box-shadow: rgba(0,0,0,.24) 0 1px 3px, inset rgba(160,255,160,.2) 0 1px;
+					box-shadow: rgba(0,0,0,.24) 0 1px 3px, inset rgba(160,255,160,.2) 0 1px;
 }
 
 #team_coderwall .team-coders {
