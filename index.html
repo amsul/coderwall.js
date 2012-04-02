@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" 	 		content="width=device-width,initial-scale=1,maximum-scale=2">
+	<meta name="author"			 		content="Amsul Naeem - http://amsul.ca">
+  <meta name="copyright" 	 		content="&copy; Amsul">
+  
+  <!--[if lt IE 9 ]>
+	  <meta http-equiv="X-UA-Compatible"	content="IE=edge,chrome=1" />
+	<![endif]-->
+	
+  <title>Coderwall Team Badges</title>
+	
+	<link type="text/css" 			rel="stylesheet"			href="main.css">
+	<link 											rel="dns-prefetch"		href="//ajax.googleapis.com">
+
+	<!--[if lt IE 9]>
+		<script src="//ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	
+	
+  <div id="T">
+  
+  	
+  	<header class="container" id="header">
+	  	<div class="row">
+	  		<h1>Coderwall Team Badges</h1>
+	  		<div class="clear"></div>
+	  	</div>
+		</header>
+
+
+		<section class="row">
+			<div class="colbox">
+				<div id="team_coderwall"></div>
+			</div>
+		</section>
+
+  	
+  </div> <!-- #T -->
+	
+	
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="coderwall-team.min.js"></script>
+
+	<script type="text/javascript">
+
+		$('#team_coderwall').teamCoderwall({
+			team: ['amsul','maxpresman', 'chriscoyier']
+		});
+
+	</script>
+	
+</html>
