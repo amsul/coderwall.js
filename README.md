@@ -1,9 +1,9 @@
-# Coderwall-team.js
+# Coderwall.js
 
 
 jQuery plugin that displays [Coderwall](http://coderwall.com) badges for your team.
 
-Demo: __[Coderwall-team.js](http://amsul.github.com/coderwall-team.js/)__
+Demo: __[Coderwall.js](http://amsul.github.com/coderwall-team.js/)__
 
 ===
 
