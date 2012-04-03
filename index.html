@@ -14,7 +14,7 @@
   <title>Coderwall Team Badges</title>
 	
 	<link type="text/css" 			rel="stylesheet"			href="main.css">
-	<link 											rel="dns-prefetch"		href="http://ajax.googleapis.com">
+	<link 											rel="dns-prefetch"		href="//ajax.googleapis.com">
 
 	<!--[if lt IE 9]>
 		<script src="//ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
@@ -59,13 +59,17 @@
 
 						<h2>Usage</h2>
 						<pre><code>$('#CONTAINER').teamCoderwall({
-    team: ['CODERWALL','USERNAMES','SEPARATED','BY','COMMAS']
+    team: ['CODERWALL','USERNAMES','SEPARATED','BY','COMMAS'],
+    badge_size: 128    // (optional) defaults to 72 &amp; max is 200
 });</code></pre>
 						<p>Just change <code>#CONTAINER</code> to the ID of the DOM element where you want the badges to be displayed.</p>
-						<p>Next, you need to pass in a list of your team members' Coderwall.com usernames as as array.</p>
+						<p>Next, you need to pass in a list of your team members' Coderwall.com usernames as an array.</p>
 
-				    <h2>Todo</h2>
-				    <p>Add more options. Such as <code>badge_size</code> and the likes.</p>
+				    <h3>Todo</h3>
+				    <ul>
+				    	<li>"Loading" indicator</li>
+				    	<li>Make an embeddable script</li>
+				    </ul>
 
 					</div>
 				</div>
@@ -75,10 +79,10 @@
 					<div class="colbox">
 
 						<h2>Download</h2>
-						<p>Current version: <strong>0.0.2 alpha</strong></p>
-						<p><a href="https://raw.github.com/amsul/coderwall.js/gh-pages/coderwall.js">Full (4KB)</a><span class="dimmed">&nbsp;&nbsp;/&nbsp;&nbsp;</span><a href="https://raw.github.com/amsul/coderwall.js/gh-pages/coderwall.min.js">Minified (2KB)</a></p>
-						<p><a href="https://raw.github.com/amsul/coderwall.js/gh-pages/coderwall.coffee">CoffeeScript Source</a></strong></p>
-				    <p>You can download the <strong>coderwall.js</strong> project as a <a href="https://github.com/amsul/coderwall.js/zipball/master">zip</a> or <a href="https://github.com/amsul/coderwall.js/tarball/master">tar</a>. Or, clone the project with <a target="_blank" href="http://git-scm.com">Git</a> by running:</p>
+						<p>Current version: <strong>0.0.5 alpha</strong></p>
+						<p><a href="js/coderwall.min.js">Minified (2kb)</a><span class="dimmed">&nbsp;&nbsp;/&nbsp;&nbsp;</span><a href="js/coderwall.js">Full (4kb)</a><span class="dimmed">&nbsp;&nbsp;/&nbsp;&nbsp;</span><a href="coffee/coderwall.coffee">CoffeeScript Source (5kb)</a></p>
+						<p>If you want the default styling, you can grab it here: <a href="css/coderwall.css">CSS (1kb)</a></p>
+				    <p>You can download the <strong>coderwall.js</strong> project as a <a href="https://github.com/amsul/coderwall.js/zipball/gh-pages">zip</a> or <a href="https://github.com/amsul/coderwall.js/tarball/gh-pages">tar</a>. Or, clone the project with <a target="_blank" href="http://git-scm.com">Git</a> by running:</p>
 				    <pre><code>$ git clone git://github.com/amsul/coderwall.js</code></pre>
 
 					</div>
@@ -94,7 +98,7 @@
 			<div class="row">
 
 				<div class="colbox">
-					<p>brought to you by <a target="_blank" href="http://amsul.ca">amsul</a></p>
+					<p>written by <a target="_blank" href="http://amsul.ca">amsul</a></p>
 				</div>
 				<br>
 				<a class="slash" href="http://wecodestuff.co" target="_blank" title="weCodeStuff : ninjas who code"></a>
@@ -109,18 +113,17 @@
 	
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script src="coderwall.min.js"></script>
+	<script src="js/coderwall.min.js"></script>
 
 	<script type="text/javascript">
 
 		$('#team_coderwall').teamCoderwall({
-			team: ['amsul','maxpresman', 'chriscoyier']
+			team: ['amsul', 'maxpresman', 'chriscoyier'],
+	    badge_size: 128    // (optional) defaults to 72 & max is 200
 		});
 
 	</script>
 
-	<script type="text/javascript">var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script>
-	<script type="text/javascript">try { var pageTracker = _gat._getTracker("UA-30529502-1"); pageTracker._trackPageview();} catch(err) {}script>
 	
 </html>
 

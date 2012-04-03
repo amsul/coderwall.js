@@ -2,13 +2,15 @@
  * Author:															Amsul
  * Author URI:													http://amsul.ca
  * Description:													Main stylesheet
- * Version:															0.0.2 alpha
+ * Version:															0.0.5 alpha
  * Created on:													29/03/2012
- * Last Updated:												02 April, 2012
+ * Last Updated:												03 April, 2012
  * 
  * Based on HTML5 Boilerplate & 1140px Grid
  */
 
+
+@import url(css/coderwall.css);
 
 /************************************************************************
 	HTML5 element display & base
@@ -359,22 +361,28 @@ h1 {
 
 h2 {
 	font-size: 24px;
+	line-height: 1.6;
 }
 
 h3 {
 	font-size: 22px;
+	margin-bottom: 0;
+	line-height: 1;
 }
 
 h4 {
 	font-size: 20px;
+	line-height: 1;
 }
 
 h5 {
 	font-size: 18px;
+	line-height: 1;
 }
 
 h6 {
 	font-size: 16px;
+	line-height: 1;
 	margin: 1.5em 0 .5em;
 }
 
@@ -596,74 +604,6 @@ input[type=submit].button-white:active,
 }
 #footer .slash:hover {
 	background-position: 0 -72px;
-}
-
-
-
-/** Team coderwall stuff **/
-
-#team_coderwall {
-	display: none;
-}
-
-#team_box {
-	padding: 36px 10px 0;
-	background: #fff;
-	border: 1px solid #d2d2d2;
-	border-bottom-color: #ccc;
-	font-size: 11px;
-	text-align: center;
-	color: #7c7c7c;
-
-	-webkit-border-radius: 4px;
-		 -moz-border-radius: 4px;
-					border-radius: 4px;
-
-	-webkit-box-shadow: rgba(0,0,0,.04) 0 1px 4px;
-		 -moz-box-shadow: rgba(0,0,0,.04) 0 1px 4px;
-					box-shadow: rgba(0,0,0,.04) 0 1px 4px;
-}
-
-#team_box .box-badge {
-	display: inline-block;
-	width: 120px;
-	margin: 0 28px 42px;
-	position: relative;
-}
-
-#team_box .show-count:after {
-	content: attr(data-count);
-	position: absolute;
-	top: 0;
-	right: 0;
-	margin: -8px 10px 0 0;
-	background: #5a2;
-	border: 1px solid #280;
-	border-bottom-color: #160;
-	width: 16px;
-	height: 16px;
-	line-height: 16px;
-	color: #fff;
-	font-size: 9px;
-	font-weight: bold;
-
-	-webkit-border-radius: 8px;
-		 -moz-border-radius: 8px;
-					border-radius: 8px;
-
-	-webkit-box-shadow: rgba(0,0,0,.24) 0 1px 3px, inset rgba(160,255,160,.2) 0 1px;
-		 -moz-box-shadow: rgba(0,0,0,.24) 0 1px 3px, inset rgba(160,255,160,.2) 0 1px;
-					box-shadow: rgba(0,0,0,.24) 0 1px 3px, inset rgba(160,255,160,.2) 0 1px;
-}
-
-#team_coderwall .team-coders {
-	text-align: center;
-	font-size: 11px;
-	color: #999;
-}
-#team_coderwall .team-coders a {
-	color: #999;
-	margin: 0 3px;
 }
 
 
