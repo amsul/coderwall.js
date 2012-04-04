@@ -26,7 +26,7 @@
   <div id="T">
 
 
-  	<a href="https://github.com/amsul/coderwall.js"><img style="z-index: 1000; position: fixed; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" /></a>
+  	<a href="https://github.com/amsul/coderwall.js"><img width="128" height="128" style="z-index:1000;position:fixed;top:0;right:0" src="https://a248.e.akamai.net/assets.github.com/img/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" /></a>
   
   	
   	<header class="container" id="header">
@@ -39,11 +39,47 @@
 
 
 		<section class="container">
+
+			<div class="row">
+
+				<div class="threecol">
+					<div class="colbox">
+						<p><strong>Give it a whirl!</strong> Show badges for:</p>
+					</div>
+				</div>
+
+				<div class="ninecol">
+					<div class="colbox">
+
+						<form class="form-inline" id="submit_team">
+							<fieldset class="fieldbox">
+								<input type="text" name="codername" placeholder="Write a Coderwall username">
+							</fieldset>
+							<fieldset class="fieldbox">
+								<a data-type="remove_coder" class="remove button-white">&times;</a>
+								<input type="text" name="codername" placeholder="Write a Coderwall username">
+							</fieldset>
+							<fieldset class="fieldbox">
+								<button data-type="add_coder">Add another</button>
+							</fieldset>
+							<fieldset class="fieldbox">
+								<button data-type="show_badges">Show badges</button>
+							</fieldset>
+						</form>
+
+					</div>
+				</div>
+
+				<div class="clear"></div>
+			</div>
+
+
 			<div class="row">
 				<div class="colbox">
 					<div id="team_coderwall"></div>
 				</div>
 			</div>
+
 		</section>
 
 
@@ -113,7 +149,8 @@
 	
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script src="js/coderwall.min.js"></script>
+	<script src="js/coderwall.js"></script>
+	<script src="js/demo.js"></script>
 
 	<script type="text/javascript">
 
