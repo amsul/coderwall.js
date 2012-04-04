@@ -4,7 +4,7 @@
  * Description:													Main stylesheet
  * Version:															0.0.5 alpha
  * Created on:													29/03/2012
- * Last Updated:												03 April, 2012
+ * Last Updated:												04 April, 2012
  * 
  * Based on HTML5 Boilerplate & 1140px Grid
  */
@@ -351,7 +351,8 @@ h2:first-child,
 h3:first-child,
 h4:first-child,
 h5:first-child,
-h6:first-child {
+h6:first-child,
+p:first-child {
 	margin-top: 0;
 }
 
@@ -436,7 +437,7 @@ input[type=email],
 textarea {
 	border: 1px solid #999;
 	padding: 5px;
-	width: 240px;
+	width: 180px;
 	
 	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
 		 -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
@@ -520,7 +521,7 @@ input[type=submit].button-white,
 .button-white {
 	background: #fff;
 	color: #424242;
-	border-color: #ccc;
+	border: 1px solid #ccc;
 	min-width: inherit;
 	padding: 9px 10px 6px;
 }
@@ -555,6 +556,25 @@ input[type=submit].button-white:active,
 					box-shadow: inset 0 1px 1px rgba(80,80,80,0.1);
 }
 
+
+
+
+/** Inline forms **/
+
+.form-inline .fieldbox {
+	display: inline-block;
+	margin-right: 12px;
+}
+
+.form-inline button,
+.form-inline input[type=button],
+.form-inline input[type=reset],
+.form-inline input[type=submit],
+.form-inline .button {
+	font-size: 11px;
+	text-transform: uppercase;
+	padding: 6px 10px;
+}
 
 
 
@@ -608,6 +628,40 @@ input[type=submit].button-white:active,
 
 
 
+#submit_team .fieldbox {
+	position: relative;
+}
+
+#submit_team .remove {
+	position: absolute;
+	top: -6px;
+	right: -8px;
+	width: 16px;
+	height: 16px;
+	line-height: 12px;
+	padding: 0;
+	font-size: 14px;
+	color: #999;
+	text-align: center;
+	font-weight: bold;
+	border-color: #777;
+	border-top-color: #888;
+
+	-webkit-border-radius: 8px;
+		 -moz-border-radius: 8px;
+					border-radius: 8px;
+
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.18);
+		 -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.18);
+					box-shadow: 0 1px 3px rgba(0,0,0,0.18);
+}
+#submit_team .remove:hover,
+#submit_team .remove:active {
+	color: #911;
+	border-color: #af4242;
+	background-color: #ffe2e2;
+	text-decoration: none;
+}
 
 
 
