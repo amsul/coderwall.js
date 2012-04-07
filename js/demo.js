@@ -33,7 +33,7 @@
             badge_size: 128
           });
         } else if (type === 'get_script') {
-          scriptTags = '<textarea onmouseup="this.select()">&lt;script src="//amsul.github.com/coderwall.js/js/coderwall.min.js">&lt;/script>&lt;script id="coderscript">!function($,d){$("<div/>").insertBefore(d.getElementById("coderscript")).codersWall({team:[' + JSON.stringify(team) + ']})}(jQuery,document);&lt;/script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​</textarea>';
+          scriptTags = '<textarea onmouseup="this.select()">&lt;script src="//cloud.github.com/downloads/amsul/coderwall.js/coderwall.min.js">&lt;/script>&lt;script id="coderscript">!function($,d){$("<div/>").insertBefore(d.getElementById("coderscript")).codersWall({team:[' + JSON.stringify(team) + ']})}(jQuery,document);&lt;/script>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​</textarea>';
           form.find('#script_box').html(scriptTags);
         }
       }
