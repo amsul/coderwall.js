@@ -1,9 +1,6 @@
-#team_coderwall {
-	display: none;
-}
-
 #team_box {
 	padding: 36px 10px 0;
+	margin: 0 0 12px;
 	background: #fff;
 	border: 1px solid #d2d2d2;
 	border-bottom-color: #ccc;
@@ -22,8 +19,8 @@
 
 #team_box .box-badge {
 	display: inline-block;
-	min-width: 120px;
-	margin: 0 28px 42px;
+	min-width: 108px;
+	margin: 0 12px 42px;
 	position: relative;
 }
 

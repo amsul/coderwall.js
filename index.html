@@ -13,7 +13,7 @@
 	
   <title>Coderwall Team Badges</title>
 	
-	<link type="text/css" 			rel="stylesheet"			href="main.css">
+	<link type="text/css" 			rel="stylesheet"			href="css/demo.css">
 	<link 											rel="dns-prefetch"		href="//ajax.googleapis.com">
 
 	<!--[if lt IE 9]>
@@ -42,43 +42,54 @@
 
 			<div class="row">
 
-				<div class="threecol">
+				<div class="eightcol">
 					<div class="colbox">
-						<p><strong>Give it a whirl!</strong> Show badges for:</p>
-					</div>
+
+						<div id="team_coderwall">
+							<div class="loading">
+								Loading
+								<p><img src="media/loading.gif"></p>
+							</div>
+						</div>
+
+					</div> <!-- .colbox -->
 				</div>
 
-				<div class="ninecol">
+
+				<div class="fourcol">
 					<div class="colbox">
 
-						<form class="form-inline" id="submit_team">
+						<p><strong>Give it a whirl!</strong> Show badges for:</p>
+
+						<form id="submit_team">
 							<fieldset class="fieldbox">
 								<input type="text" name="codername" placeholder="Write a Coderwall username">
 							</fieldset>
 							<fieldset class="fieldbox">
 								<a data-type="remove_coder" class="remove button-white">&times;</a>
-								<input type="text" name="codername" placeholder="Write a Coderwall username">
+								<input type="text" name="codername" placeholder="Write another Coderwall username">
 							</fieldset>
 							<fieldset class="fieldbox">
 								<button data-type="add_coder">Add another</button>
 							</fieldset>
+							<div class="clear"></div>
 							<fieldset class="fieldbox">
-								<button data-type="show_badges">Show badges</button>
+								<button data-type="show_badges">Show team badges</button>
 							</fieldset>
+							<div class="clear"></div>
+							<fieldset class="fieldbox">
+								<button data-type="get_script" class="button-white">Get embed script</button>
+							</fieldset>
+							<fieldset id="script_box"></fieldset>
 						</form>
 
-					</div>
+					</div> <!-- .colbox -->
 				</div>
 
 				<div class="clear"></div>
 			</div>
 
 
-			<div class="row">
-				<div class="colbox">
-					<div id="team_coderwall"></div>
-				</div>
-			</div>
 
 		</section>
 
@@ -94,20 +105,14 @@
 					<div class="colbox">
 
 						<h2>Usage</h2>
-						<pre><code>$('#CONTAINER').teamCoderwall({
+						<pre><code>$('#CONTAINER').codersWall({
     team: ['CODERWALL','USERNAMES','SEPARATED','BY','COMMAS'],
     badge_size: 128    // (optional) defaults to 72 &amp; max is 200
 });</code></pre>
 						<p>Just change <code>#CONTAINER</code> to the ID of the DOM element where you want the badges to be displayed.</p>
-						<p>Next, you need to pass in a list of your team members' Coderwall.com usernames as an array.</p>
+						<p>Next, you need to pass in a list of your team members' Coderwall.com usernames as an array and you're good to go!</p>
 
-				    <h3>Todo</h3>
-				    <ul>
-				    	<li>"Loading" indicator</li>
-				    	<li>Make an embeddable script</li>
-				    </ul>
-
-					</div>
+					</div> <!-- .colbox -->
 				</div>
 
 
@@ -115,13 +120,13 @@
 					<div class="colbox">
 
 						<h2>Download</h2>
-						<p>Current version: <strong>0.0.5 alpha</strong></p>
+						<p>Current version: <strong>0.5 beta</strong></p>
 						<p><a href="js/coderwall.min.js">Minified (2kb)</a><span class="dimmed">&nbsp;&nbsp;/&nbsp;&nbsp;</span><a href="js/coderwall.js">Full (4kb)</a><span class="dimmed">&nbsp;&nbsp;/&nbsp;&nbsp;</span><a href="coffee/coderwall.coffee">CoffeeScript Source (5kb)</a></p>
 						<p>If you want the default styling, you can grab it here: <a href="css/coderwall.css">CSS (1kb)</a></p>
 				    <p>You can download the <strong>coderwall.js</strong> project as a <a href="https://github.com/amsul/coderwall.js/zipball/gh-pages">zip</a> or <a href="https://github.com/amsul/coderwall.js/tarball/gh-pages">tar</a>. Or, clone the project with <a target="_blank" href="http://git-scm.com">Git</a> by running:</p>
 				    <pre><code>$ git clone git://github.com/amsul/coderwall.js</code></pre>
 
-					</div>
+					</div> <!-- .colbox -->
 				</div>
 
 
@@ -133,9 +138,7 @@
 		<footer class="container" id="footer">
 			<div class="row">
 
-				<div class="colbox">
-					<p>written by <a target="_blank" href="http://amsul.ca">amsul</a></p>
-				</div>
+				<div class="colbox"><p>written by <a target="_blank" href="http://amsul.ca">amsul</a></p></div>
 				<br>
 				<a class="slash" href="http://wecodestuff.co" target="_blank" title="weCodeStuff : ninjas who code"></a>
 
@@ -154,9 +157,9 @@
 
 	<script type="text/javascript">
 
-		$('#team_coderwall').teamCoderwall({
+		$('#team_coderwall').codersWall({
 			team: ['amsul', 'maxpresman', 'chriscoyier'],
-	    badge_size: 128    // (optional) defaults to 72 & max is 200
+	    badge_size: 102    // (optional) defaults to 72 & max is 200
 		});
 
 	</script>

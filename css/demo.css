@@ -2,15 +2,15 @@
  * Author:															Amsul
  * Author URI:													http://amsul.ca
  * Description:													Main stylesheet
- * Version:															0.0.5 alpha
+ * Version:															0.5 beta
  * Created on:													29/03/2012
- * Last Updated:												04 April, 2012
+ * Last Updated:												06 April, 2012
  * 
  * Based on HTML5 Boilerplate & 1140px Grid
  */
 
 
-@import url(css/coderwall.css);
+@import url(coderwall.css);
 
 /************************************************************************
 	HTML5 element display & base
@@ -43,7 +43,7 @@ body {
 	margin: 0;
 	font-size: 13px;
 	line-height: 2;
-	background: url(media/bg.png) repeat fixed 0 0 #f6f6f6;
+	background: url(../media/bg.png) repeat fixed 0 0 #f6f6f6;
 }
 
 
@@ -115,7 +115,7 @@ hr {
 	border: 0;
 	margin: 2.8em 0;
 	padding: 0 0 4px;
-	background: url(media/shadow.png) no-repeat 50% 0 transparent;
+	background: url(../media/shadow.png) no-repeat 50% 0 transparent;
 }
 
 ins { background: #ff9; color: #000; text-decoration: none; }
@@ -437,7 +437,7 @@ input[type=email],
 textarea {
 	border: 1px solid #999;
 	padding: 5px;
-	width: 180px;
+	width: 220px;
 	
 	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
 		 -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
@@ -477,7 +477,9 @@ input[type=submit],
 	background: #5a2;
 	font-weight: bold;
 	color: #fff;
-	padding: 8px 14px;
+	font-size: 11px;
+	text-transform: uppercase;
+	padding: 6px 10px;
 	border: 1px solid #490;
 	border-bottom-color: #3f8f00;
 }
@@ -523,7 +525,7 @@ input[type=submit].button-white,
 	color: #424242;
 	border: 1px solid #ccc;
 	min-width: inherit;
-	padding: 9px 10px 6px;
+	padding: 6px 10px;
 }
 
 button.button-white:hover,
@@ -556,25 +558,6 @@ input[type=submit].button-white:active,
 					box-shadow: inset 0 1px 1px rgba(80,80,80,0.1);
 }
 
-
-
-
-/** Inline forms **/
-
-.form-inline .fieldbox {
-	display: inline-block;
-	margin-right: 12px;
-}
-
-.form-inline button,
-.form-inline input[type=button],
-.form-inline input[type=reset],
-.form-inline input[type=submit],
-.form-inline .button {
-	font-size: 11px;
-	text-transform: uppercase;
-	padding: 6px 10px;
-}
 
 
 
@@ -616,7 +599,7 @@ input[type=submit].button-white:active,
 	font-weight: bold;
 }
 #footer .slash {
-	background: url(media/slash.png) no-repeat 0 0 transparent;
+	background: url(../media/slash.png) no-repeat 0 0 transparent;
 	width: 72px;
 	height: 72px;
 	overflow: hidden;
@@ -628,7 +611,22 @@ input[type=submit].button-white:active,
 
 
 
-#submit_team .fieldbox {
+
+/** demo stuff **/
+
+#team_coderwall .loading {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-weight: 200;
+	color: #999;
+	padding: 42px 0 32px;
+}
+
+
+#submit_team fieldset {
+	display: inline-block;
+	margin-right: 12px;
 	position: relative;
 }
 
@@ -663,6 +661,14 @@ input[type=submit].button-white:active,
 	text-decoration: none;
 }
 
+#script_box textarea {
+	resize: none;
+	height: 112px;
+	font-size: 11px;
+	font-family: monospace, serif;
+	_font-family: 'courier new', monospace;
+}
+
 
 
 
@@ -678,7 +684,8 @@ input[type=submit].button-white:active,
 ************************************************************************/
 
 
-@media (min-width: 480px) {
+
+@media (min-width: 720px) {
 	
 
 
@@ -689,7 +696,7 @@ input[type=submit].button-white:active,
 	.container { padding: 0; }
 
 	.row {
-		width: 420px;
+		width: 660px;
 		margin: 0 auto;
 
 		-webkit-transition: all .15s linear;
@@ -721,37 +728,6 @@ input[type=submit].button-white:active,
 						transition: all .15s linear;
 	}
 
-	.onecol				{		width:		35px;		}
-	.twocol				{		width:		70px;		}
-	.threecol			{		width:		105px;	}
-	.fourcol			{		width:		140px;	}
-	.fivecol			{		width:		175px;	}
-	.sixcol				{		width:		210px;	}
-	.sevencol			{		width:		245px;	}
-	.eightcol			{		width:		280px;	}
-	.ninecol			{		width:		315px;	}
-	.tencol				{		width:		350px;	}
-	.elevencol		{		width:		385px;	}
-
-	.row .colbox { margin: 0 4px;	}
-
-	
-} /* >= 480px */
-
-
-
-
-
-@media (min-width: 720px) {
-	
-
-
-	/************************************************************************
-		Grid -- twelve column
-	************************************************************************/
-
-	.row { width: 660px; }
-
 	.onecol				{		width:		55px;		}
 	.twocol				{		width:		110px;	}
 	.threecol			{		width:		165px;	}
@@ -764,9 +740,7 @@ input[type=submit].button-white:active,
 	.tencol				{		width:		550px;	}
 	.elevencol		{		width:		605px;	}
 
-	.row .colbox {
-		margin: 0 8px;
-	}
+	.row .colbox { margin: 0 8px;	}
 
 	
 } /* >= 720px */
