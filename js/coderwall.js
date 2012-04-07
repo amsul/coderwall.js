@@ -1,11 +1,11 @@
 
-/* 
+/*
   Author:                 Amsul
   Author URI:             http://amsul.ca
   Description:            Displays Coderwall badges for your team
-  Version:                0.0.5 alpha
+  Version:                0.5 beta
   Created on:             31/03/2012
-  Last Updated:           03 April, 2012
+  Last Updated:           04 April, 2012
 */
 
 (function() {
@@ -19,7 +19,8 @@
       self = this;
       self.box = coderBox;
       self.$box = $(coderBox);
-      self.options = $.extend({}, $.fn.teamCoderwall.options, options);
+      self.teamBadges = {};
+      self.options = $.extend({}, $.fn.codersWall.options, options);
       self.team = (typeof options !== 'undefined' ? options.team : self.options.team);
       self.compileBadges();
       return self;
@@ -83,10 +84,7 @@
       self = this;
       badgeSize = self.options.badge_size;
       compileList = function(badge, badgeObj) {
-        return '<li class="box-badge">\
-        <div class="badge-icon' + (badgeObj.count > 1 ? ' show-count' : '') + '" data-count="' + badgeObj.count + '"><img width="' + badgeSize + '" height="' + badgeSize + '" alt="' + badge + '" data-title="' + badgeObj.description + '" src="' + badgeObj.badge + '"></div>\
-        <div class="badge-name">' + badge + '</div>\
-      </li>';
+        return '<li class="box-badge"><div class="badge-icon' + (badgeObj.count > 1 ? ' show-count' : '') + '" data-count="' + badgeObj.count + '"><img width="' + badgeSize + '" height="' + badgeSize + '" alt="' + badge + '" data-title="' + badgeObj.description + '" src="' + badgeObj.badge + '"></div><div class="badge-name">' + badge + '</div></li>';
       };
       teamBadgesList = '<ul id="team_box">';
       for (badge in teamBadges) {
@@ -102,10 +100,9 @@
         teamBadgesList += compileCoderList(coder);
       }
       teamBadgesList += '</div>';
-      self.$box.html(teamBadgesList).show();
+      self.$box.html(teamBadgesList);
       return self;
-    },
-    teamBadges: {}
+    }
   };
 
   Fetcher = (function() {
@@ -125,7 +122,7 @@
 
   })();
 
-  $.fn.teamCoderwall = function(options) {
+  $.fn.codersWall = function(options) {
     return this.each(function() {
       var coderwall;
       coderwall = Object.create(CodersWall);
@@ -134,7 +131,7 @@
     });
   };
 
-  $.fn.teamCoderwall.options = {
+  $.fn.codersWall.options = {
     team: ['amsul', 'maxpresman'],
     badge_size: 72
   };

@@ -1,11 +1,11 @@
-### 
+###
   Author:                 Amsul
   Author URI:             http://amsul.ca
   Description:            Displays Coderwall badges for your team
-  Version:                0.0.5 alpha
+  Version:                0.5 beta
   Created on:             31/03/2012
-  Last Updated:           03 April, 2012
-###  
+  Last Updated:           04 April, 2012
+###
 
 
 ##################################
@@ -29,7 +29,10 @@ CodersWall =
     self.box = coderBox
     self.$box = $ coderBox
 
-    self.options = $.extend( {}, $.fn.teamCoderwall.options, options)
+    # empty team badges object to collect and store the badges
+    self.teamBadges = {}
+
+    self.options = $.extend( {}, $.fn.codersWall.options, options)
 
     self.team = ( if typeof options isnt 'undefined' then options.team else self.options.team )
 
@@ -117,10 +120,7 @@ CodersWall =
     compileList = (badge, badgeObj) ->
 
       # show the counter only if there's more than one of a badge
-      '<li class="box-badge">
-        <div class="badge-icon' + ( if badgeObj.count > 1 then ' show-count' else '' ) + '" data-count="' + badgeObj.count + '"><img width="' + badgeSize + '" height="' + badgeSize + '" alt="' + badge + '" data-title="' + badgeObj.description + '" src="' + badgeObj.badge + '"></div>
-        <div class="badge-name">' + badge + '</div>
-      </li>'
+      '<li class="box-badge"><div class="badge-icon' + ( if badgeObj.count > 1 then ' show-count' else '' ) + '" data-count="' + badgeObj.count + '"><img width="' + badgeSize + '" height="' + badgeSize + '" alt="' + badge + '" data-title="' + badgeObj.description + '" src="' + badgeObj.badge + '"></div><div class="badge-name">' + badge + '</div></li>'
     #compileList
 
     # loop through the badges and compile them
@@ -142,14 +142,10 @@ CodersWall =
     teamBadgesList += '</div>'
     
     # paint the team badges onto the page
-    self.$box.html(teamBadgesList).show()
+    self.$box.html(teamBadgesList)
 
     return self
   #printBadges
-
-
-  # empty team badges object to collect and store the badges
-  teamBadges: {}
 
 
 
@@ -175,9 +171,9 @@ class Fetcher
 
 
 ##################################
-# bind teamCoderWall
+# bind codersWall
 
-$.fn.teamCoderwall = (options) ->
+$.fn.codersWall = (options) ->
   this.each ->
 
     # create a new instance and init
@@ -188,7 +184,7 @@ $.fn.teamCoderwall = (options) ->
 
 
 # default options
-$.fn.teamCoderwall.options =
+$.fn.codersWall.options =
   team: ['amsul', 'maxpresman']
   badge_size: 72
 
