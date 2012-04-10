@@ -19,10 +19,10 @@ $('#CONTAINER').codersWall({
 
 ### Download 
 
-Minified: __[coderwall.min.js (2kb)](http://cloud.github.com/downloads/amsul/coderwall.js/coderwall.min.js)__
+Minified: __[coderwall.min.js (4kb)](http://cloud.github.com/downloads/amsul/coderwall.js/coderwall.min.js)__
 
-Full: __[coderwall.js (4kb)](http://cloud.github.com/downloads/amsul/coderwall.js/coderwall.js)__
+Full: __[coderwall.js (6kb)](http://cloud.github.com/downloads/amsul/coderwall.js/coderwall.js)__
 
-CoffeeScript source: __[coderwall.coffee (5kb)](http://cloud.github.com/downloads/amsul/coderwall.js/coderwall.coffee)__
+CoffeeScript source: __[coderwall.coffee (7kb)](http://cloud.github.com/downloads/amsul/coderwall.js/coderwall.coffee)__
 
 Default CSS: __[coderwall.css (1kb)](http://cloud.github.com/downloads/amsul/coderwall.js/coderwall.css)__
