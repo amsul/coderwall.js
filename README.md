@@ -16,7 +16,7 @@ $('#CONTAINER').codersWall({
 });
 
 ```
-
+ 
 ### Download 
 
 Minified: __[coderwall.min.js (4kb)](http://cloud.github.com/downloads/amsul/coderwall.js/coderwall.min.js)__
