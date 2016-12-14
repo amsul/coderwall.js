@@ -58,7 +58,7 @@ CodersWall =
     # request each coders badges and collect the coders' requests
     self.teamFetcher = (coder, count) ->
                       $.jsonp
-                        url: 'http://coderwall.com/' + coder + '.json?callback=?'
+                        url: 'https://coderwall.com/' + coder + '.json?callback=?'
                         cache: true
                         success: (coder, resp) ->
                           self.storeTeamBadges(coder, resp)
@@ -135,7 +135,7 @@ CodersWall =
 
     # compile the coder usernames into a list of their coderwall profiles
     compileCoderList = (coder) ->
-      '<a href="http://coderwall.com/' + coder + '" target="_blank">' + coder + '</a>'
+      '<a href="https://coderwall.com/' + coder + '" target="_blank">' + coder + '</a>'
 
     # add the team coder names as a footer
     teamBadgesList += '<div class="team-coders"><strong>Badges achieved by:&nbsp;</strong>'
